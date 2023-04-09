@@ -1,0 +1,150 @@
+4. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225
+$ git init
+Initialized empty Git repository in C:/Users/Lazar/Desktop/SI_2023_lab1_213225/.git/
+
+5. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git remote add origin https://github.com/LazarMicev/SI_2023_lab1_213225.git
+
+6. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ nano README.md
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git add README.md
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git commit -m "Initial commit"
+
+7. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ nano SILab1.java
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git add SILab1.java
+warning: in the working copy of 'SILab1.java', LF will be replaced by CRLF the next time Git touches it
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git commit -m "Add java class"
+
+8. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git push -u origin master
+
+9. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git branch bug1
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git branch bug2
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git branch bug3
+
+10. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+11.  Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ nano SILab1.java
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git add SILab1.java
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git commit -m "Fix wrong loop for reading"
+
+12. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+13. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (bug2)
+$ nano SILab1.java
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (bug2)
+$ git add SILab1.java
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (bug2)
+$ git commit -m "Fix wrong condition in filterOddNumbers"
+
+14. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (bug2)
+$ git checkout bug3
+Switched to branch 'bug3'
+
+15. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (bug3)
+$ nano SILab1.java
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (bug3)
+$ git add SILab1.java
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (bug3)
+$ git commit -m "Fix method sumEvenNumbers"
+
+16. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (bug3)
+$ git push origin --all
+
+17. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (bug3)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+18. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git merge bug1
+Already up to date.
+
+19. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git push origin --all
+Everything up-to-date
+
+
+20. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git merge bug2
+
+
+
+21. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git push origin --all
+
+
+22. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git checkout bug3
+Switched to branch 'bug3'
+
+23. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (bug3)
+$ git rebase master
+Successfully rebased and updated refs/heads/bug3.
+
+24. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (bug3)
+$ git push origin --all
+To https://github.com/LazarMicev/SI_2023_lab1_213225.git
+ ! [rejected]        bug3 -> bug3 (non-fast-forward)
+error: failed to push some refs to 'https://github.com/LazarMicev/SI_2023_lab1_213225.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (bug3)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+27. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git log
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ nano logs.txt
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ nano 213225.txt
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git add --all
+
+Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git commit -m "Final commit"
+
+28. Lazar@DESKTOP-LM64R72 MINGW64 ~/Desktop/SI_2023_lab1_213225 (master)
+$ git push origin --all
+
+
+
+
+

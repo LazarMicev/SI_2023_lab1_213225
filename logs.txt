@@ -1,0 +1,23 @@
+commit 680ef0b3694c0a324a66e70418312139ba67599f (HEAD -> master, origin/master, bug3)
+Author: LazarMicev <lazarmice2002@gmail.com>
+Date:   Sun Apr 9 23:24:59 2023 +0200
+
+    Fix method sumEvenNumbers
+
+commit 80321dee1938c03b4a71adeebcd6ba06dd94334e
+Merge: 9f25b42 04e55fc
+Author: LazarMicev <lazarmice2002@gmail.com>
+Date:   Sun Apr 9 23:26:05 2023 +0200
+
+    Merge branch 'bug2'
+
+commit 04e55fc2be8062ed7ec1d6d680bc08453e0a2c33 (origin/bug2, bug2)
+Author: LazarMicev <lazarmice2002@gmail.com>
+Date:   Sun Apr 9 23:23:20 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit 9f25b42af791ea578bbbe27b3e90a0e5d9429087
+Author: LazarMicev <lazarmice2002@gmail.com>
+Date:   Sun Apr 9 23:21:31 2023 +0200
+:
